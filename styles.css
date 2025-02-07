@@ -1,7 +1,7 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
 }
 body {
-  background-color: light-dark{#fff, #444};
-  color: light-dark{#444, #fff};
+  background-color: dark{#444};
+  color: dark{#444};
 }

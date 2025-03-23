@@ -29,4 +29,4 @@ hiddenButtons.forEach(button => {
             console.error("No page specified for this button.");
         }
     });
-}); s
+});

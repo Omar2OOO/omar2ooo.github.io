@@ -20,6 +20,7 @@ backButton.addEventListener("click", () => {
     initialButtonContainer.style.display = "flex";
     backButton.style.display = "none";
 });
+
 hiddenButtons.forEach(button => {
     button.addEventListener("click", () => {
         const page = button.dataset.page;
@@ -29,4 +30,4 @@ hiddenButtons.forEach(button => {
             console.error("No page specified for this button.");
         }
     });
-}); s
+});

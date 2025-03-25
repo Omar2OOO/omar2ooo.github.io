@@ -1,67 +1,67 @@
 @font-face {
-    font-family: 'Nexa';
-    src: url(/fonts/Nexa-Heavy.ttf);
+  font-family: 'Nexa';
+  src: url(/fonts/Nexa-Heavy.ttf);
 }
 
 body {
-    font-family: 'Nexa';
-    background-color: rgb(255, 220, 155);
-    margin: 0;
-    height: 100%;
+  font-family: 'Nexa';
+  background-color: rgb(255, 220, 155);
+  margin: 0;
+  height: 100%;
 }
 
-
 button {
-    background-color: rgba(153, 122, 84, 0.649);
-    font-family: 'Nexa';
-    font-size: 4vh; 
-    border-radius: 10vh;
-    min-width: 33vh;
-    min-height: 10vh;
-    padding: 3vh 4vh;
-    transition: background-color 0.3s ease, box-shadow 0.2s ease;
-    border: none;
-    box-sizing: border-box;
-    box-shadow: 0vh 3vh 2vh rgba(0, 0, 0, .6);
+  background-color: rgba(153, 122, 84, 0.649);
+  font-family: 'Nexa';
+  font-size: 4vh; 
+  border-radius: 10vh;
+  min-width: 33vh;
+  min-height: 10vh;
+  padding: 3vh 4vh;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0vh 3vh 2vh rgba(0, 0, 0, .6);
 }
 
 button:hover {
-    background-color: rgb(153, 122, 84);
-    animation: bounce 0.325s;
-    animation-iteration-count: 1; 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background-color: rgb(153, 122, 84);
+  animation: bounce 0.325s;
+  animation-iteration-count: 1; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 button:active {
-    background-color: rgba(153, 122, 84, 0.69);
-    transform: scale(0.95); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    animation: none;
-    transition: 0.07s ease;
+  background-color: rgba(153, 122, 84, 0.69);
+  transform: scale(0.95); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  animation: none;
+  transition: 0.07s ease;
 }
 
 .back {
-    display: none;
-    font-size: 6vh;
-    background: none;
-    box-shadow: 0px 0px 0px;
-    top: 5%;
-    left: 5%;
+  display: none;
+  font-size: 6vh;
+  background: none;
+  box-shadow: 0px 0px 0px;
+  top: 5%;
+  left: 5%;
 }
 
 .back:hover {
-    background: none;
-    box-shadow: 0px 0px 0px;
+  background: none;
+  box-shadow: 0px 0px 0px;
 }
 
 .back:active {
-    background: none;
-    box-shadow: 0px 0px 0px;
+  background: none;
+  box-shadow: 0px 0px 0px;
 }
 
-.hiddenButton {
-  display: none;
+.hiddenButtonContainer {
+  display: none; /* Initially hidden */
 }
+
 #initialButtonContainer {
   display: flex;
   justify-content: center;
@@ -70,25 +70,29 @@ button:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
-#hiddenButtonsContainer {}
+
+#hiddenButtonsContainer {
+  z-index: 5;
+}
 
 @keyframes bounce {
-    0% {
+  0% {
       transform: scale(1);
-    }
-    25% {
+  }
+  25% {
       transform: scale(1.03);
-    }
-    50% {
+  }
+  50% {
       transform: scale(1); 
-    }
-    75% {
+  }
+  75% {
       transform: scale(1.01);
-    }
-    100% {
+  }
+  100% {
       transform: scale(1);
-    }
+  }
 }
 
   

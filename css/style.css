@@ -33,7 +33,7 @@ button:hover {
 
 button:active {
   background-color: rgba(153, 122, 84, 0.69);
-  transform: scale(0.95); 
+  transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   animation: none;
   transition: 0.07s ease;
@@ -59,7 +59,7 @@ button:active {
 }
 
 .hiddenButtonContainer {
-  display: none; /* Initially hidden */
+  display: none;
 }
 
 #initialButtonContainer {
@@ -95,4 +95,121 @@ button:active {
   }
 }
 
-  
+@keyframes bobAndRotate {
+  0%, 100% {
+    transform: translateY(0vh) rotate(0deg);
+  }
+  12.5% {
+    transform: translateY(0.25vh) rotate(1deg);
+  }
+  25% {
+    transform: translateY(0.5vh) rotate(2deg);
+  }
+  37.5% {
+    transform: translateY(0.75vh) rotate(1deg);
+  }
+  50% {
+    transform: translateY(1vh) rotate(0deg);
+  }
+  62.5% {
+    transform: translateY(0.75vh) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(0.5vh) rotate(-2deg);
+  }
+  87.5% {
+    transform: translateY(0.25vh) rotate(-1deg);
+  }
+}
+
+@keyframes gradientTransition {
+  0% {
+    background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
+  }
+  10% {
+    background-image: linear-gradient(rgb(255, 220, 155) 90%, rgb(122, 98, 69) 10%);
+  }
+  20% {
+    background-image: linear-gradient(rgb(255, 220, 155) 80%, rgb(122, 98, 69) 20%);
+  }
+  30% {
+    background-image: linear-gradient(rgb(255, 220, 155) 70%, rgb(122, 98, 69) 30%);
+  }
+  40% {
+    background-image: linear-gradient(rgb(255, 220, 155) 60%, rgb(122, 98, 69) 40%);
+  }
+  50% {
+    background-image: linear-gradient(rgb(255, 220, 155) 50%, rgb(122, 98, 69) 50%);
+  }
+  60% {
+    background-image: linear-gradient(rgb(255, 220, 155) 40%, rgb(122, 98, 69) 60%);
+  }
+  70% {
+    background-image: linear-gradient(rgb(255, 220, 155) 30%, rgb(122, 98, 69) 70%);
+  }
+  80% {
+    background-image: linear-gradient(rgb(255, 220, 155) 20%, rgb(122, 98, 69) 80%);
+  }
+  90% {
+    background-image: linear-gradient(rgb(255, 220, 155) 10%, rgb(122, 98, 69) 90%);
+  }
+  100% {
+    background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
+  }
+}
+
+.gradient-background {
+  width: 100vh;
+  height: 100vh;
+  animation: gradientTransition 0.1s ease;
+  background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
+}
+
+@keyframes gradientTransition1 {
+  0% {
+    background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
+  }
+  10% {
+    background-image: linear-gradient(rgb(255, 220, 155) 10%, rgb(122, 98, 69) 90%);
+  }
+  20% {
+    background-image: linear-gradient(rgb(255, 220, 155) 20%, rgb(122, 98, 69) 80%);
+  }
+  30% {
+    background-image: linear-gradient(rgb(255, 220, 155) 30%, rgb(122, 98, 69) 70%);
+  }
+  40% {
+    background-image: linear-gradient(rgb(255, 220, 155) 40%, rgb(122, 98, 69) 60%);
+  }
+  50% {
+    background-image: linear-gradient(rgb(255, 220, 155) 50%, rgb(122, 98, 69) 50%);
+  }
+  60% {
+    background-image: linear-gradient(rgb(255, 220, 155) 60%, rgb(122, 98, 69) 40%);
+  }
+  70% {
+    background-image: linear-gradient(rgb(255, 220, 155) 70%, rgb(122, 98, 69) 30%);
+  }
+  80% {
+    background-image: linear-gradient(rgb(255, 220, 155) 80%, rgb(122, 98, 69) 20%);
+  }
+  90% {
+    background-image: linear-gradient(rgb(255, 220, 155) 90%, rgb(122, 98, 69) 10%);
+  }
+  100% {
+    background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
+  }
+}
+
+.gradient-background1 {
+  width: 100vh;
+  height: 100vh;
+  animation: gradientTransition1 0.1s ease;
+  background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
+}
+
+.hiddenButton {
+  will-change: transform;
+  transform: translateZ(0);
+  animation: bobAndRotate 8s ease-in infinite;
+}

@@ -13,7 +13,7 @@ body {
 button {
   background-color: rgba(153, 122, 84, 0.649);
   font-family: 'Nexa';
-  font-size: 4vh; 
+  font-size: 4vh;
   border-radius: 10vh;
   min-width: 33vh;
   min-height: 10vh;
@@ -27,19 +27,20 @@ button {
 button:hover {
   background-color: rgb(153, 122, 84);
   animation: bounce 0.325s;
-  animation-iteration-count: 1; 
+  animation-iteration-count: 1;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 button:active {
   background-color: rgba(153, 122, 84, 0.69);
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   animation: none;
   transition: 0.07s ease;
 }
 
 .back {
+  position: fixed;
   display: none;
   font-size: 6vh;
   background: none;
@@ -85,7 +86,7 @@ button:active {
       transform: scale(1.03);
   }
   50% {
-      transform: scale(1); 
+      transform: scale(1);
   }
   75% {
       transform: scale(1.01);
@@ -97,113 +98,113 @@ button:active {
 
 @keyframes bobAndRotate {
   0%, 100% {
-    transform: translateY(0vh) rotate(0deg);
+      transform: translateY(0vh) rotate(0deg);
   }
   12.5% {
-    transform: translateY(0.25vh) rotate(1deg);
+      transform: translateY(0.25vh) rotate(1deg);
   }
   25% {
-    transform: translateY(0.5vh) rotate(2deg);
+      transform: translateY(0.5vh) rotate(2deg);
   }
   37.5% {
-    transform: translateY(0.75vh) rotate(1deg);
+      transform: translateY(0.75vh) rotate(1deg);
   }
   50% {
-    transform: translateY(1vh) rotate(0deg);
+      transform: translateY(1vh) rotate(0deg);
   }
   62.5% {
-    transform: translateY(0.75vh) rotate(-1deg);
+      transform: translateY(0.75vh) rotate(-1deg);
   }
   75% {
-    transform: translateY(0.5vh) rotate(-2deg);
+      transform: translateY(0.5vh) rotate(-2deg);
   }
   87.5% {
-    transform: translateY(0.25vh) rotate(-1deg);
+      transform: translateY(0.25vh) rotate(-1deg);
   }
 }
 
 @keyframes gradientTransition {
   0% {
-    background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
+      background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
   }
   10% {
-    background-image: linear-gradient(rgb(255, 220, 155) 90%, rgb(122, 98, 69) 10%);
+      background-image: linear-gradient(rgb(255, 220, 155) 90%, rgb(122, 98, 69) 10%);
   }
   20% {
-    background-image: linear-gradient(rgb(255, 220, 155) 80%, rgb(122, 98, 69) 20%);
+      background-image: linear-gradient(rgb(255, 220, 155) 80%, rgb(122, 98, 69) 20%);
   }
   30% {
-    background-image: linear-gradient(rgb(255, 220, 155) 70%, rgb(122, 98, 69) 30%);
+      background-image: linear-gradient(rgb(255, 220, 155) 70%, rgb(122, 98, 69) 30%);
   }
   40% {
-    background-image: linear-gradient(rgb(255, 220, 155) 60%, rgb(122, 98, 69) 40%);
+      background-image: linear-gradient(rgb(255, 220, 155) 60%, rgb(122, 98, 69) 40%);
   }
   50% {
-    background-image: linear-gradient(rgb(255, 220, 155) 50%, rgb(122, 98, 69) 50%);
+      background-image: linear-gradient(rgb(255, 220, 155) 50%, rgb(122, 98, 69) 50%);
   }
   60% {
-    background-image: linear-gradient(rgb(255, 220, 155) 40%, rgb(122, 98, 69) 60%);
+      background-image: linear-gradient(rgb(255, 220, 155) 40%, rgb(122, 98, 69) 60%);
   }
   70% {
-    background-image: linear-gradient(rgb(255, 220, 155) 30%, rgb(122, 98, 69) 70%);
+      background-image: linear-gradient(rgb(255, 220, 155) 30%, rgb(122, 98, 69) 70%);
   }
   80% {
-    background-image: linear-gradient(rgb(255, 220, 155) 20%, rgb(122, 98, 69) 80%);
+      background-image: linear-gradient(rgb(255, 220, 155) 20%, rgb(122, 98, 69) 80%);
   }
   90% {
-    background-image: linear-gradient(rgb(255, 220, 155) 10%, rgb(122, 98, 69) 90%);
+      background-image: linear-gradient(rgb(255, 220, 155) 10%, rgb(122, 98, 69) 90%);
   }
   100% {
-    background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
+      background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
   }
 }
 
 .gradient-background {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   animation: gradientTransition 0.1s ease;
   background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
 }
 
 @keyframes gradientTransition1 {
   0% {
-    background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
+      background-image: linear-gradient(rgb(255, 220, 155) 0%, rgb(122, 98, 69) 100%);
   }
   10% {
-    background-image: linear-gradient(rgb(255, 220, 155) 10%, rgb(122, 98, 69) 90%);
+      background-image: linear-gradient(rgb(255, 220, 155) 10%, rgb(122, 98, 69) 90%);
   }
   20% {
-    background-image: linear-gradient(rgb(255, 220, 155) 20%, rgb(122, 98, 69) 80%);
+      background-image: linear-gradient(rgb(255, 220, 155) 20%, rgb(122, 98, 69) 80%);
   }
   30% {
-    background-image: linear-gradient(rgb(255, 220, 155) 30%, rgb(122, 98, 69) 70%);
+      background-image: linear-gradient(rgb(255, 220, 155) 30%, rgb(122, 98, 69) 70%);
   }
   40% {
-    background-image: linear-gradient(rgb(255, 220, 155) 40%, rgb(122, 98, 69) 60%);
+      background-image: linear-gradient(rgb(255, 220, 155) 40%, rgb(122, 98, 69) 60%);
   }
   50% {
-    background-image: linear-gradient(rgb(255, 220, 155) 50%, rgb(122, 98, 69) 50%);
+      background-image: linear-gradient(rgb(255, 220, 155) 50%, rgb(122, 98, 69) 50%);
   }
   60% {
-    background-image: linear-gradient(rgb(255, 220, 155) 60%, rgb(122, 98, 69) 40%);
+      background-image: linear-gradient(rgb(255, 220, 155) 60%, rgb(122, 98, 69) 40%);
   }
   70% {
-    background-image: linear-gradient(rgb(255, 220, 155) 70%, rgb(122, 98, 69) 30%);
+      background-image: linear-gradient(rgb(255, 220, 155) 70%, rgb(122, 98, 69) 30%);
   }
   80% {
-    background-image: linear-gradient(rgb(255, 220, 155) 80%, rgb(122, 98, 69) 20%);
+      background-image: linear-gradient(rgb(255, 220, 155) 80%, rgb(122, 98, 69) 20%);
   }
   90% {
-    background-image: linear-gradient(rgb(255, 220, 155) 90%, rgb(122, 98, 69) 10%);
+      background-image: linear-gradient(rgb(255, 220, 155) 90%, rgb(122, 98, 69) 10%);
   }
   100% {
-    background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
+      background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
   }
 }
 
 .gradient-background1 {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   animation: gradientTransition1 0.1s ease;
   background-image: linear-gradient(rgb(255, 220, 155) 100%, rgb(122, 98, 69) 0%);
 }
@@ -212,4 +213,13 @@ button:active {
   will-change: transform;
   transform: translateZ(0);
   animation: bobAndRotate 8s ease-in infinite;
+}
+
+.content-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vh;
 }

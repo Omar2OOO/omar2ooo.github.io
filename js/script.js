@@ -6,12 +6,22 @@ const initialButtonContainer = document.getElementById("initialButtonContainer")
 const hiddenButtonsContainer = document.getElementById("hiddenButtonsContainer");
 const hiddenButtons = document.querySelectorAll(".hiddenButton");
 const body = document.body;
+const copyrightText = document.getElementById("copyrightText");
+const resumeContent = document.getElementById("resumeContent");
 
 revealButton.addEventListener("click", () => {
     initialButtonContainer.style.display = "none";
     backButton.style.display = "block";
     body.classList.remove("gradient-background1");
     body.classList.add("gradient-background");
+    body.style.overflow = "auto";
+
+    const resumeBottom = resumeContent.offsetTop + resumeContent.offsetHeight;
+
+    copyrightText.style.position = "absolute";
+    copyrightText.style.top = `${resumeBottom}px`;
+    copyrightText.style.left = "50%";
+    copyrightText.style.transform = "translate(-50%, 0)";
 
     hiddenButtonContainers.forEach((container, index) => {
         container.style.display = "flex";
@@ -60,4 +70,23 @@ backButton.addEventListener("click", () => {
     backButton.style.display = "none";
     body.classList.remove("gradient-background");
     body.classList.add("gradient-background1");
+    body.style.overflow = "hidden";
+    document.getElementById("buttonsSpace").scrollIntoView({ behavior: 'smooth' });
+
+    copyrightText.style.position = "absolute";
+    copyrightText.style.top = "90%";
+    copyrightText.style.left = "50%";
+    copyrightText.style.transform = "translate(-50%, -50%)";
 });
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+document.querySelector(".aboutButton").addEventListener("click", () => scrollToSection("aboutContent"));
+document.querySelector(".projectsButton").addEventListener("click", () => scrollToSection("projectsContent"));
+document.querySelector(".linksButton").addEventListener("click", () => scrollToSection("linksContent"));
+document.querySelector(".resumeButton").addEventListener("click", () => scrollToSection("resumeContent"));

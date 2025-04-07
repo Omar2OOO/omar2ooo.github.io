@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
-    <div id="initialButtonContainer"> 
+<body style="overflow: hidden;">
+    <div id="buttonsSpace" style="height: 100vh;"></div>
+
+    <div id="initialButtonContainer">
         <button id="revealButton">ENTER</button>
     </div>
 
@@ -21,10 +23,28 @@
         </div>
     </div>
 
-    <div style="display: flex; justify-content: center; align-items: center; position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); font-size: 1.2vh;">
+    <div id="copyrightText" style="display: flex; justify-content: center; align-items: center; position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%); font-size: 1.2vh;">
         <h2 style="display: flex">© 2025 OMAR ATIYYAT</h2>
     </div>
     <button class="back">🠈</button>
+
+    <div id="aboutContent" class="content-section">
+        <p>...........................</p>
+        <img src="Assets/testGif.gif">
+    </div>
+
+    <div id="projectsContent" class="content-section">
+        <p>This is the PROJECTS content.</p>
+    </div>
+
+    <div id="linksContent" class="content-section">
+        <p>This is the LINKS content.</p>
+    </div>
+
+    <div id="resumeContent" class="content-section">
+        <p>This is the RESUME content.</p>
+    </div>
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </body>

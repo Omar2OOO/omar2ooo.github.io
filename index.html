@@ -2,6 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body style="overflow: hidden;">
+    <div id="backgroundAnimationContainer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1;"></div>
     <div id="buttonsSpace" style="height: 100vh;"></div>
 
     <div id="initialButtonContainer">
@@ -29,8 +30,20 @@
     <button class="back">🠈</button>
 
     <div id="aboutContent" class="content-section">
-        <p>...........................</p>
-        <img src="Assets/testGif.gif">
+        <img class="my-img bounce" style="position: relative; top: 10%; left: 31%;" src="Assets/websiteSphere2.png"></img>
+        <div>
+            <p class="my-p bounce" style="position: relative; text-align: center; width: 70%; right: 22%; font-size: 2.8vh; color: rgb(255, 220, 155); text-shadow: 3px 3px 2px black;">Hi, I'm Omar, a recent computer science grad fueled by the 
+                ever-expanding frontier of tech – seriously, it's like a new planet 
+                being discovered daily, and I want to be one of the first explorers! 
+                My journey into this world was a bit of a late-bloom, sparked by 
+                the fascinating puzzle of cryptography in my final year of studies. Suddenly, 
+                the idea of turning complex math into unbreakable digital locks completely 
+                captivated me and even led me to a math minor. I'm now eager to bring 
+                that same drive for understanding and problem-solving to any corner of 
+                software engineering where I can contribute and keep learning. 
+                What kind of expeditions are you leading?</p>
+        </div>
+        <img style= "border-radius: 2.5vh; border: none; position: absolute; left: 10%; box-sizing: border-box; box-shadow: 1vh 1vh 1vh rgb(107, 73, 11);" src="Assets/testGif.gif"></img>
     </div>
 
     <div id="projectsContent" class="content-section">

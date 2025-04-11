@@ -202,6 +202,15 @@ button:active {
   }
 }
 
+@keyframes bob {
+  0%, 100% {
+      transform: translateY(0vh);
+  }
+  50% {
+      transform: translateY(1vh);
+  }
+}
+
 .gradient-background1 {
   width: 100%;
   height: 100%;
@@ -222,4 +231,11 @@ button:active {
   justify-content: center;
   align-items: center;
   font-size: 5vh;
+}
+
+.my-p.bounce{
+  animation: bob 4s ease-in-out infinite;
+}
+.my-img.bounce{
+  animation: bob 4s ease-in-out infinite;
 }
